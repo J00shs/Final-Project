@@ -1,6 +1,10 @@
 package com.CSCI185;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Team {
     //A. Variables
@@ -47,4 +51,26 @@ public class Team {
         this.saveFile = saveFile;
     }
 
-}
+    //constructors
+    //default and Parameterized
+
+    public void Team()
+    {
+        trainer = "No trainer yet";
+        gym = "No gym yet";
+    }
+
+    public void Team(String newTrainer, String newGym)
+    {
+        trainer = newTrainer;
+        gym = newGym;
+    }
+
+    //adds the Pokemon made from user input and adds to the members array list
+    public void addMember()
+    {
+            members.add(new Pokemon());
+            Pokemon.readInput();
+    }
+
+    }
