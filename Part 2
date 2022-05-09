@@ -54,13 +54,13 @@ public class Team {
     //constructors
     //default and Parameterized
 
-    public void Team()
+    public Team()
     {
         trainer = "No trainer yet";
         gym = "No gym yet";
     }
 
-    public void Team(String newTrainer, String newGym)
+    public Team(String newTrainer, String newGym)
     {
         trainer = newTrainer;
         gym = newGym;
